@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <nav class="blue lighten-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Temperature Converter</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/Prikshit-Rai">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/prikshit-rai/">LinkedIn</a></li>
+        <li><a href="https://materializecss.com/">Materialize CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel teal lighten-2 center-align">
+          <h5 class="white-text">Choose Conversion Type</h5>
+          <a class="waves-effect waves-light btn-large tooltipped" id="convertCtoF" data-position="bottom" data-tooltip="Convert Celsius to Fahrenheit">Celsius to Fahrenheit</a>
+          <a class="waves-effect waves-light btn-large tooltipped" id="convertFtoK" data-position="bottom" data-tooltip="Convert Fahrenheit to Kelvin">Fahrenheit to Kelvin</a>
+          <a class="waves-effect waves-light btn-large tooltipped" id="convertKtoC" data-position="bottom" data-tooltip="Convert Kelvin to Celsius">Kelvin to Celsius</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="inputSection" class="row">
+      <div class="col s12">
+        <div class="card-panel white">
+          <div class="input-field col s12">
+            <input id="temperature" type="number" class="validate">
+            <label for="temperature">Enter Temperature</label>
+          </div>
+          <div class="col s12 center-align">
+            <button id="convertBtn" class="waves-effect waves-light btn">Convert</button>
+            <button id="clearBtn" class="waves-effect waves-light btn red">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultSection" class="row">
+      <div class="col s12">
+        <div class="card-panel teal lighten-2 center-align">
+          <h5 class="white-text"><b>Converted Temperature: </b><span id="result"></span></h5>
+        </div>
+      </div>
+    </div>
+
+    <div id="loadingSpinner" class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+
+  <footer class="page-footer blue lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h5 class="white-text">Temperature Converter</h5>
+          <p class="grey-text text-lighten-4">Made with Materialize CSS and JavaScript. Convert temperatures easily.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 Temperature Converter
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Prikshit-Rai">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
